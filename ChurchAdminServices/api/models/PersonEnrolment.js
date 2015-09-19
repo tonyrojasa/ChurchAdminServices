@@ -30,6 +30,10 @@ module.exports = {
         receipt: {
             collection: 'Receipt'
         },
+        sponsor: {
+            type: 'string',
+            columnName: 'sponsor'
+        },
         attended: {
             type: 'string',
             columnName: 'attended'

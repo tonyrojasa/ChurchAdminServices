@@ -10,15 +10,15 @@ module.exports = {
     schema: true,
 
     attributes: {
-        ContactInfoValue: {
+        value: {
             type: 'string',
-            columnName: 'ContactInfoValue',
+            columnName: 'value',
             required: true
         },
-        ContactInfoType: {
+        type: {
             type: 'string',
             enum: ['homePhone', 'cellPhone', 'workPhone', 'emailAddress'],
-            columnName: 'ContactInfoType'
+            columnName: 'type'
         },
         person: {
             model: 'Person',

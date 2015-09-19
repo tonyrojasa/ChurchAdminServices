@@ -39,6 +39,10 @@ module.exports = {
             columnName: 'activeMember',
             required: true
         },
+        memberTimeYears: {
+            type: 'float',
+            columnName: 'memberTimeYears'
+        },
         address: {
             type: 'string',
             columnName: 'address'
@@ -59,6 +63,48 @@ module.exports = {
             collection: 'PersonType',
             required: true
         },
+        birthDate: {
+            type: 'date',
+            columnName: 'birthDate'
+        },
+        age: {
+            type: 'integer',
+            columnName: 'age'
+        },
+        maritalStatus: {
+            type: 'string',
+            enum: ['married', 'single', 'divorced', 'widower', 'freeUnion', 'other'],
+            columnName: 'maritalStatus',
+            required: true
+        },
+        grade: {
+            type: 'string',
+            columnName: 'grade'
+        },
+        occupation: {
+            type: 'string',
+            columnName: 'grade'
+        },
+        employer: {
+            type: 'string',
+            columnName: 'grade'
+        },
+        shirtSize: {
+            type: 'string',
+            columnName: 'shirtSize'
+        },
+        medicalTreatment: {
+            type: 'string',
+            columnName: 'medicalTreatment'
+        },
+        medicineType: {
+            type: 'string',
+            columnName: 'medicineType'
+        },
+        allergies: {
+            type: 'string',
+            columnName: 'allergies'
+        }
 
     }
 
