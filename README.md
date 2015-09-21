@@ -1,2 +1,3 @@
-# AdminTool
-Church Administration Tool
+# ChurchAdminServices
+
+a [Sails](http://sailsjs.org) application
