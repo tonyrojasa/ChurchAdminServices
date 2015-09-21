@@ -10,6 +10,35 @@ module.exports = {
     schema: true,
 
     attributes: {
-
+        serviceAcademy: {
+            model: 'ServiceAcademy'
+        },
+        teachers: {
+            collection: 'Person',
+            required: true
+        },
+        members: {
+            collection: 'Person',
+            via: 'serviceAcademyClass',
+            required: true
+        },
+        name: {
+            type: 'string',
+            columnName: 'name',
+            required: true
+        },
+        description: {
+            type: 'string',
+            columnName: 'description'
+        },
+        classroom: {
+            type: 'string',
+            columnName: 'classroom'
+        },
+        date: {
+            type: 'date',
+            columnName: 'date',
+            required: true
+        }
     }
 };

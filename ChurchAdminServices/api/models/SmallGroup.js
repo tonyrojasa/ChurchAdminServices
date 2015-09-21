@@ -10,6 +10,35 @@ module.exports = {
     schema: true,
 
     attributes: {
-
+        place: {
+            model: 'RegistrationPlace',
+            required: true
+        },
+        serviceArea: {
+            model: 'ServiceArea',
+            required: true
+        },
+        leaders: {
+            collection: 'Person',
+            required: true
+        },
+        members: {
+            collection: 'Person',
+            required: true
+        },
+        name: {
+            type: 'string',
+            columnName: 'name',
+            required: true
+        },
+        description: {
+            type: 'string',
+            columnName: 'description'
+        },
+        meetingDays: {
+            type: 'string',
+            enum: ['Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa', 'Su'],
+            columnName: 'meetingDays'
+        }
     }
 };

@@ -17,7 +17,7 @@ module.exports = {
         belongsTo: {
             model: 'ServiceArea'
         },
-        leader: {
+        leaders: {
             collection: 'Person',
             required: true
         },

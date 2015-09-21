@@ -43,6 +43,10 @@ module.exports = {
             type: 'float',
             columnName: 'memberTimeYears'
         },
+        serviceAcademyClass: {
+            collection: 'serviceAcademyClass',
+            via: 'members'
+        },
         address: {
             type: 'string',
             columnName: 'address'
