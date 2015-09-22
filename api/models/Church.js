@@ -14,6 +14,22 @@ module.exports = {
             collection: 'ContactInfo',
             required: true
         },
+        pastors: {
+            collection: 'Person',
+            via: 'church'
+        },
+        members: {
+            collection: 'Person',
+            via: 'church'
+        },
+        events: {
+            collection: 'Event',
+            via: 'church'
+        },
+        organizations: {
+            collection: 'Organization',
+            via: 'church'
+        },
         name: {
             type: 'string',
             columnName: 'name',

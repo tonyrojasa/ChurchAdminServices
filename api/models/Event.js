@@ -18,7 +18,7 @@ module.exports = {
             model: 'RegistrationPlace',
             required: true
         },
-        eventType: {
+        type: {
             model: 'EventType',
             required: true
         },

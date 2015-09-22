@@ -10,8 +10,8 @@ module.exports = {
     schema: true,
 
     attributes: {
-        church: {
-            model: 'Church',
+        organization: {
+            model: 'Organization',
             required: true
         },
         belongsTo: {
@@ -20,6 +20,14 @@ module.exports = {
         leaders: {
             collection: 'Person',
             required: true
+        },
+        serviceAcademies: {
+            collection: 'ServiceAcademy',
+            via: 'serviceArea'
+        },
+        smallGroups: {
+            collection: 'SmallGroup',
+            via: 'serviceArea'
         },
         name: {
             type: 'string',

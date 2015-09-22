@@ -10,9 +10,6 @@ module.exports = {
     schema: true,
 
     attributes: {
-        roles: {
-            collection: 'PersonRoles'
-        },
         name: {
             type: 'string',
             columnName: 'name',
